@@ -15,6 +15,44 @@
 // Montserrat
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+// FontAwesome Pro
+@font-face {
+    font-family: "FontAwesomePro";
+    src: url("//db.onlinewebfonts.com/t/0b28d43e90a11a93d935b305ff2cefb2.eot");
+    src: url("//db.onlinewebfonts.com/t/0b28d43e90a11a93d935b305ff2cefb2.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/0b28d43e90a11a93d935b305ff2cefb2.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/0b28d43e90a11a93d935b305ff2cefb2.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/0b28d43e90a11a93d935b305ff2cefb2.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/0b28d43e90a11a93d935b305ff2cefb2.svg#Font Awesome 5 Pro") format("svg");
+}
+
+// END OF FontAwesome Pro
+
+/// Helvetica Neue
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/helvetica-neue/HelveticaNeueLight.eot");
+  src: url("../fonts/helvetica-neue/HelveticaNeueLight.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/helvetica-neue/HelveticaNeueLight.woff2") format("woff2"),
+  url("../fonts/helvetica-neue/HelveticaNeueLight.woff") format("woff"),
+  url("../fonts/helvetica-neue/HelveticaNeueLight.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url("../fonts/helvetica-neue/HelveticaNeueMedium.eot");
+    src: url("../fonts/helvetica-neue/HelveticaNeueMedium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/helvetica-neue/HelveticaNeueMedium.woff2") format("woff2"),
+    url("../fonts/helvetica-neue/HelveticaNeueMedium.woff") format("woff"),
+    url("../fonts/helvetica-neue/HelveticaNeueMedium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/// End Helvetica Neue
 
 /// Custom Font
 

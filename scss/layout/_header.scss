@@ -1,15 +1,23 @@
 header {
 	background-color: $white;
 	position: relative;
-	box-shadow: 0px 30px 40px rgba(0,0,0,0.15);
+	// border-bottom: 1px solid red;
+	z-index: 1050;
 
 	.navbar {
 		padding: 0px 0px;
 
 		.navbar-brand{
-			max-height: 60px;
-			margin: 15px 0px;
+			// max-height: 60px;
+			// margin: 15px 0px;
+			height: 100px;
+			width: auto;
 			padding: 0px;
+			position: fixed;
+			top: 15px;
+			bottom: auto;
+			left: 15px;
+			right: auto;
 		}
 
 		.navbar-toggler {
@@ -23,31 +31,39 @@ header {
 			align-items: flex-start;
 			-webkit-transition: all ease 0.3s;
 			transition: all ease 0.3s;
-			z-index: 10;
+			// z-index: 10;
+			position: fixed;
+			right: 15px;
+			left: auto;
+			top: 51px;
+			bottom: auto;
 
 			.icon-bar {
 				display: block;
-				background: $primary-color;
-				height: 3px;
-				width: 25px;
+				background: $black;
+				height: 2px;
+				width: 39.36px;
 				-webkit-transition: all ease 0.3s;
 				transition: all ease 0.3s;
 				transform-origin: center center;
 
 				&.middle {
-					height: 0px;
+					height: 2px;
 					opacity: 0;
-					margin: 4px 0px;
+					margin: 11px 0px;
+					width: 35px;
 				}
 
 				&.top {
-					transform: rotate(45deg);
-					margin-bottom: -5.5px;
+					transform: rotate(-45deg);
+					transform-origin: top right;
+					// margin-bottom: -10px;
 				}
 
 				&.bottom {
-					transform: rotate(-45deg);
-					margin-top: -5.5px;
+					transform: rotate(45deg);
+					transform-origin: bottom right;
+					// margin-top: -5.5px;
 				}
 			}
 
@@ -57,20 +73,20 @@ header {
 
 				.icon-bar {
 					transform: rotate(0deg);
-					transform-origin: center;
-					width: 25px;
+					width: 35px;
 
 					&.middle {
 						opacity: 1;
-						height: 3px;
+						height: 2px;
 					}
 
 					&.top {
-						margin-bottom: 0px;
+						transform-origin: top right;
+						// margin-bottom: 0px;
 					}
 
 					&.bottom {
-						margin-top: 0px;
+						// margin-top: 0px;
 					}
 				}
 			}
