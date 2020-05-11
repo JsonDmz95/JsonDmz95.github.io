@@ -19,6 +19,7 @@ header {
 			bottom: auto;
 			left: 15px;
 			right: auto;
+			z-index: 1050;
 
 			path{
 				fill: $white;
@@ -42,6 +43,7 @@ header {
 			left: auto;
 			top: 51px;
 			bottom: auto;
+			z-index: 1051;
 
 			.icon-bar {
 				display: block;
@@ -101,36 +103,55 @@ header {
 			}
 		}
 
-		.navbar-collapse {
-			background: $primary-color;
-			margin-left: -15px;
-			margin-right: -15px;
 
-			ul.navbar-nav{
+	}
+
+}
+
+.navbar-collapse {
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	bottom: 0px;
+	left: auto;
+	right: 100%;
+	background: $secondary-color;
+	height: 100% !important;
+	width: 100%;
+	transition: all ease 0.5s;
+
+
+	ul.navbar-nav{
+		padding: 150px 15px 100px 15px;
+		opacity: 0;
+		transition: all ease 0.5s 0.5s;
+
+		.nav-item{
+			line-height: 1.5;
+			font-size: 30px;
+			text-transform: uppercase;
+			display: flex;
+
+			a.nav-link{
 				padding: 0px;
-				li{
-					display: block;
-					.nav-link{
-						color: $white;
-						padding: 15px;
-						font-size: 14px;
-						line-height: 1;
-						text-transform: uppercase;
-						font-weight: 600;
-						letter-spacing: letter-spacing(50, 14px);
+				// flex: 1;
+				line-height: 1.5;
 
-						@include on-event{
-							background: rgba($black, 0.1);
-						}
-					}
-				}
 			}
-
-
-
 		}
 	}
 
+	&.show{
+		right: 0px;
+		ul.navbar-nav{
+			opacity: 1;
+		}
+	}
+	&.collapsing{
+		ul {
+			opacity: 0;
+		}
+	}
 }
 
 @media (min-width: 768px){
