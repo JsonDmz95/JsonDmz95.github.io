@@ -253,6 +253,59 @@ header .navbar .navbar-toggler:focus {
   outline: none;
 }
 
+header .navbar .desktop-navigation {
+  padding: 0px;
+  opacity: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: transparent;
+  position: fixed;
+  z-index: 1049;
+  bottom: 30px;
+  top: auto;
+  left: 15px;
+  right: auto;
+  margin: 0px;
+}
+
+header .navbar .desktop-navigation .nav-item {
+  line-height: 1.5;
+  font-size: 32px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+}
+
+header .navbar .desktop-navigation .nav-item a.nav-link {
+  padding: 0px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+header .navbar .desktop-navigation .nav-item a.nav-link::after {
+  background: #ffffff;
+}
+
+header .navbar .contact-link {
+  position: fixed;
+  top: 20px;
+  bottom: auto;
+  right: 15px;
+  left: auto;
+  color: #ffffff;
+  font-size: 33px;
+  text-transform: uppercase;
+  z-index: 1052;
+}
+
+header .navbar .contact-link::after {
+  background: #ffffff;
+}
+
 .navbar-collapse {
   position: fixed;
   z-index: 100;
@@ -303,6 +356,14 @@ header .navbar .navbar-toggler:focus {
 @media (min-width: 768px) {
   header .navbar-expand-md .navbar-toggler {
     display: none;
+  }
+  header .navbar {
+    padding: 0px 0px;
+  }
+  header .navbar .navbar-brand {
+    height: auto;
+    top: 20px;
+    left: 15px;
   }
 }
 

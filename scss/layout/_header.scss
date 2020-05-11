@@ -8,7 +8,7 @@ header {
 	.navbar {
 		padding: 0px 0px;
 
-		.navbar-brand{
+		.navbar-brand {
 			// max-height: 60px;
 			// margin: 15px 0px;
 			height: 100px;
@@ -21,7 +21,7 @@ header {
 			right: auto;
 			z-index: 1050;
 
-			path{
+			path {
 				fill: $white;
 			}
 		}
@@ -103,7 +103,54 @@ header {
 			}
 		}
 
+		.desktop-navigation {
+			padding: 0px;
+			opacity: 1;
+			flex-direction: column;
+			background: transparent;
+			position: fixed;
+			z-index: 1049;
+			bottom: 30px;
+			top: auto;
+			left: 15px;
+			right: auto;
+			margin: 0px;
 
+			.nav-item {
+				line-height: 1.5;
+				font-size: 32px;
+				text-transform: uppercase;
+				display: flex;
+				color: $white;
+
+				a.nav-link {
+					padding: 0px;
+					// flex: 1;
+					line-height: 1.5;
+					color: $white;
+
+					&::after{
+						background: $white;
+					}
+				}
+			}
+		}
+
+		.contact-link{
+			position: fixed;
+			top: 20px;
+			bottom: auto;
+			right: 15px;
+			left: auto;
+			color: $white;
+			font-size: 33px;
+			text-transform: uppercase;
+			z-index: 1052;
+
+			&::after{
+				background: $white;
+			}
+		}
 	}
 
 }
@@ -121,18 +168,18 @@ header {
 	transition: all ease 0.5s;
 
 
-	ul.navbar-nav{
+	ul.navbar-nav {
 		padding: 150px 15px 100px 15px;
 		opacity: 0;
 		transition: all ease 0.5s 0.5s;
 
-		.nav-item{
+		.nav-item {
 			line-height: 1.5;
 			font-size: 30px;
 			text-transform: uppercase;
 			display: flex;
 
-			a.nav-link{
+			a.nav-link {
 				padding: 0px;
 				// flex: 1;
 				line-height: 1.5;
@@ -141,30 +188,52 @@ header {
 		}
 	}
 
-	&.show{
+	&.show {
 		right: 0px;
-		ul.navbar-nav{
+
+		ul.navbar-nav {
 			opacity: 1;
 		}
 	}
-	&.collapsing{
+
+	&.collapsing {
 		ul {
 			opacity: 0;
 		}
 	}
 }
 
-@media (min-width: 768px){
-	header{
-		.navbar-expand-md{
-			.navbar-toggler{
+@media (min-width: 768px) {
+	header {
+
+		.navbar-expand-md {
+			.navbar-toggler {
 				display: none;
 			}
 
 		}
+
+		.navbar {
+			padding: 0px 0px;
+
+			.navbar-brand {
+				// max-height: 60px;
+				// margin: 15px 0px;
+				height: auto;
+				top: 20px;
+				left: 15px;
+
+			}
+
+
+			// .navbar-collapse{
+			// 	display: block !important;
+			// }
+
+		}
+
 	}
-}
-
-@media (min-width: 992px){
 
 }
+
+@media (min-width: 992px) {}
