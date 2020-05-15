@@ -41,11 +41,11 @@ a {
     content: '';
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     top: auto;
     left: auto;
     right: 0px;
-    height: 1px;
+    height: 1.5px;
     width: 0px;
     background: $black;
     transition: width ease 0.5s;
@@ -62,13 +62,20 @@ a {
   }
 }
 
+@media (min-width: 1400px){
+  .container-fluid{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 /// Text selection colors
 ::-moz-selection {
-  background: $secondary-color;
+  background: $black;
   color: $white;
 }
 
 ::selection {
-  background: $secondary-color;
+  background: $black;
   color: $white;
 }

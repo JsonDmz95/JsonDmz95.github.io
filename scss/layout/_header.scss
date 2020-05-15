@@ -20,9 +20,36 @@ header {
 			left: 15px;
 			right: auto;
 			z-index: 1050;
+			animation: logo-rotate ease 30s infinite normal;
+			transition: all ease 0.5s;
+
+			@include on-event{
+				animation-play-state:paused;
+			}
 
 			path {
 				fill: $white;
+			}
+		}
+
+		.lights-btn{
+			position: fixed;
+			top: 65px;
+			bottom: auto;
+			left: 65px;
+			right: auto;
+			z-index: 1051;
+			color: $white;
+			font-size: 45px;
+			line-height: 1;
+			transform: translateX(-50%) translateY(-50%);
+
+			&::after{
+				display: none;
+			}
+
+			i{
+				color: $white;
 			}
 		}
 
@@ -198,7 +225,7 @@ header {
 
 	&.collapsing {
 		ul {
-			opacity: 0;
+			opacity: 1;
 		}
 	}
 }
@@ -225,6 +252,23 @@ header {
 
 			}
 
+			.lights-btn{
+				position: fixed;
+				top: 95.5px;
+				bottom: auto;
+				left: 90.5px;
+				right: auto;
+				z-index: 1051;
+				color: $white;
+				font-size: 45px;
+				line-height: 1;
+				transform: translateX(-50%) translateY(-50%);
+	
+				i{
+					color: $white;
+				}
+			}
+
 
 			// .navbar-collapse{
 			// 	display: block !important;
@@ -237,3 +281,35 @@ header {
 }
 
 @media (min-width: 992px) {}
+
+@media (min-width: 1400px){
+	header {
+		.navbar {
+
+			.navbar-brand {
+				height: auto;
+				top: 20px;
+				left: 50px;
+
+			}
+
+			.lights-btn{
+				left: 126.5px;
+			}
+
+
+			// .navbar-collapse{
+			// 	display: block !important;
+			// }
+
+			.desktop-navigation {
+				left: 50px;
+			}
+			.contact-link{
+				right: 50px;
+			}
+
+		}
+
+	}
+}
