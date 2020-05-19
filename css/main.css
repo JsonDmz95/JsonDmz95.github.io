@@ -409,5 +409,44 @@ header .navbar .contact-link::after {
 
 .wrap-content {
   background: #F7F3F0;
+  padding-top: 130px;
+}
+.wrap-content .presentation .tagline {
+  font-size: 14.5vw;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.wrap-content .presentation .tagline span {
+  display: block;
+}
+.wrap-content .presentation .tagline span.name::after {
+  content: "/505";
+}
+
+@media (min-width: 768px) {
+  .wrap-content {
+    padding-top: 0px;
+  }
+  .wrap-content .presentation {
+    padding-top: 75px;
+  }
+  .wrap-content .presentation .tagline {
+    font-size: 13.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    float: right;
+  }
+}
+@media (min-width: 992px) {
+  .wrap-content .presentation {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .wrap-content .presentation .tagline {
+    font-size: 260px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
