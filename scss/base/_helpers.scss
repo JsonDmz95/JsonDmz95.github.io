@@ -3,68 +3,89 @@
 /// -----------------------------------------------------------------------------
 
 /// Clear inner floats
-.clearfix::after{
-    clear: both;
-    content: '';
-    display: table;
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/// Custom-helpers
+.text-white {
+  color: $white;
+}
+
+.full-wd {
+  width: 100%;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/// Visible only on Full HD
+.visible-full-hd {
+  display: none !important;
+}
+
+/// Featured pages Jobs section
+.featured-jobs {
+  padding-bottom: 50px;
+}
+
+/// No break words
+.no-break {
+  white-space: nowrap;
+}
+
+/// Center images
+img {
+  margin: 0 auto;
+}
+
+/// Videos Full Width
+video {
+  width: 100%;
+  display: block;
+}
+
+.transparent-link {
+  transition: background ease-in 0.6s;
+  white-space: nowrap;
+  // color: transparent;
+  -webkit-text-stroke: 1px $text-color;
+  background-image: linear-gradient(to right, $text-color 0%, $text-color 50%, transparent 50%, transparent 100%);
+  background-size: 200%;
+  background-position: right top;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &::after{
+    display: none;
   }
   
-  /// Custom-helpers
-  .text-white{
-    color: $white;
-  }
-  
-  .full-wd{
-    width: 100%;
-  }
-  
-  .no-margin{
-    margin: 0px;
-  }
-  
-  .no-padding{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  
-  /// Visible only on Full HD
-  .visible-full-hd{
-    display: none !important;
-  }
-  
-  /// Featured pages Jobs section
-  .featured-jobs{
-    padding-bottom: 50px;
-  }
-  
-  /// No break words
-  .no-break{
-    white-space: nowrap;
-  }
-  
-  /// Center images
-  img{
-    margin: 0 auto;
-  }
-  
-  /// Videos Full Width
-  video{
-    width: 100%;
-    display: block;
+  @include on-event{
+    background-position: left top;
   }
 
-  
-  @media (min-width: 1920px) {
-  
-    /// Hide on Full HD
-    .hidden-full-hd{
-      background: none !important;
-      height: auto !important;
-    }
-  
-    /// Visible only on Full HD
-    .visible-full-hd{
-      display: block !important;
-    }
-  
+}
+
+
+@media (min-width: 1920px) {
+
+  /// Hide on Full HD
+  .hidden-full-hd {
+    background: none !important;
+    height: auto !important;
   }
+
+  /// Visible only on Full HD
+  .visible-full-hd {
+    display: block !important;
+  }
+
+}

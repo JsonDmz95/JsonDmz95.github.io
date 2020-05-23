@@ -1,7 +1,7 @@
 $("html").easeScroll({
-    frameRate: 60,
+    frameRate: 1,
     animationTime: 1500,
-    stepSize: 200,
+    stepSize: 120,
     pulseAlgorithm: 1,
     pulseScale: 8,
     pulseNormalize: 1,
