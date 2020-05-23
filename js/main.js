@@ -1,5 +1,5 @@
 $("html").easeScroll({
-    frameRate: 1,
+    frameRate: 6,
     animationTime: 1500,
     stepSize: 120,
     pulseAlgorithm: 1,
@@ -9,6 +9,6 @@ $("html").easeScroll({
     accelerationMax: 1,
     keyboardSupport: true,
     arrowScroll: 50,
-    touchpadSupport: true,
-    fixedBackground: true
+    touchpadSupport: false,
+    fixedBackground: false
   });
