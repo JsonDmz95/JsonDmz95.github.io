@@ -493,7 +493,7 @@ header .navbar .contact-link::after {
   font-size: 14.5vw;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .presentation .tagline span {
@@ -502,6 +502,10 @@ header .navbar .contact-link::after {
 
 .presentation .tagline span.name::after {
   content: '/505';
+}
+
+.resume {
+  padding-top: 50px;
 }
 
 .resume .main-resume {
@@ -522,14 +526,32 @@ header .navbar .contact-link::after {
 }
 
 .resume #picture {
-  left: 0;
+  position: fixed;
+  left: 8%;
   right: auto;
-  bottom: -93px;
-  top: auto;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
 }
 
 .resume #picture.in {
-  left: 5%;
+  left: 13%;
+}
+
+.resume .digital-description {
+  background: #F7F3F0;
+  max-width: 685px;
+  margin-top: 50px;
+}
+
+.resume .digital-description h3, .resume .digital-description p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+.resume .digital-description h3 {
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -537,32 +559,49 @@ header .navbar .contact-link::after {
     padding-top: 0px;
   }
   .presentation {
-    padding-top: 75px;
+    padding-top: 50px;
   }
   .presentation .tagline {
-    font-size: 13.5vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    float: right;
-    margin-bottom: 100px;
+    font-size: 14vw;
+  }
+  .resume {
+    padding-top: 100px;
   }
   .resume .main-resume {
-    padding-left: 5%;
     font-size: 3.9vw;
   }
 }
 
 @media (min-width: 992px) {
   .presentation {
-    padding-top: 50px;
+    padding-top: 25px;
+  }
+  .resume .digital-description {
+    border: 1px solid #000000;
+    margin-top: 0px;
+    padding: 50px;
+    box-shadow: -20px 20px 0px #000000;
+    position: fixed;
+    bottom: -100px;
+    top: auto;
+    right: 50px;
+    left: auto;
+    opacity: 0;
+    transition: all ease 0.7s;
+    pointer-events: none;
+  }
+  .resume .digital-description.in {
+    bottom: 50px;
+    opacity: 1;
+  }
+  .resume .digital-description h3, .resume .digital-description p {
+    font-size: 40px;
   }
 }
 
 @media (min-width: 1920px) {
   .presentation .tagline {
-    font-size: 260px;
+    font-size: 270px;
   }
 }
 /*# sourceMappingURL=main.css.map */
