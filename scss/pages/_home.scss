@@ -33,6 +33,7 @@
         position: absolute;
         opacity: 0;
         transition: all ease 0.7s;
+        pointer-events: none;
 
         &.in {
             opacity: 1;

@@ -87,7 +87,7 @@ video {
     background-position: right top;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    cursor: url("../img/pointer.png"), auto;
+    cursor: pointer;
     pointer-events: initial;
 
     @include on-event {

@@ -9,7 +9,8 @@ body {
   font-size: $body-font-size;
   letter-spacing: letter-spacing(50, $body-font-size);
   color: $text-color;
-  cursor: url("../img/cursor.png"), auto;
+  // cursor: url("../img/cursor.png"), auto;
+  cursor: crosshair;
 }
 
 h1,
@@ -38,7 +39,7 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
-  cursor: url("../img/pointer.png"), auto;
+  // cursor: url("../img/pointer.png"), auto;
   &::after{
     content: '';
     display: block;

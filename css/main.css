@@ -28,7 +28,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.8px;
   color: #000000;
-  cursor: url("../img/cursor.png"), auto;
+  cursor: crosshair;
 }
 
 h1,
@@ -54,7 +54,6 @@ a {
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
-  cursor: url("../img/pointer.png"), auto;
 }
 
 a::after {
@@ -167,7 +166,7 @@ video {
     background-position: right top;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    cursor: url("../img/pointer.png"), auto;
+    cursor: pointer;
     pointer-events: initial;
   }
   .transparent-link:hover, .transparent-link:active, .transparent-link:focus {
@@ -515,6 +514,7 @@ header .navbar .contact-link::after {
   position: absolute;
   opacity: 0;
   transition: all ease 0.7s;
+  pointer-events: none;
 }
 
 .resume .absolute.in {
