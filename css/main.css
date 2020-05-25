@@ -507,6 +507,8 @@ header .navbar .contact-link::after {
 .resume {
   padding-top: 50px;
   padding-bottom: 37.5px;
+  position: relative;
+  z-index: 4;
 }
 
 .resume .main-resume {
@@ -558,6 +560,8 @@ header .navbar .contact-link::after {
 .content-section {
   padding: 37.5px 0px;
   font-size: 25px;
+  position: relative;
+  z-index: 1;
 }
 
 .content-section .section-title {
