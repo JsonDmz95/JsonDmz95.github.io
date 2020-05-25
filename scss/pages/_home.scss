@@ -24,6 +24,7 @@
 
 .resume {
     padding-top: 50px;
+    padding-bottom: 37.5px;
     .main-resume {
         font-size: 30px;
         line-height: 1.3;
@@ -71,6 +72,25 @@
     }
 }
 
+.content-section{
+    padding: 37.5px 0px;
+    font-size: 25px;
+
+    .section-title{
+        font-size: 14vw;
+        line-height: 1.2;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+    &#about{
+        p{
+            font-weight: 700;
+            line-height: 1.33;
+        }
+    }
+}
+
 @media (min-width: 768px) {
     .wrap-content {
         padding-top: 0px;
@@ -86,8 +106,18 @@
 
     .resume {
         padding-top: 100px;
+        padding-bottom: 62.5px;
         .main-resume {
             font-size: 3.9vw;
+        }
+    }
+
+    .content-section{
+        padding: 62.5px 0px;
+        font-size: 40px;
+    
+        .section-title{
+            margin-bottom: 75px;
         }
     }
 }
@@ -102,6 +132,7 @@
     }
 
     .resume{
+        padding-bottom: 100px;
         .digital-description{
             border: 1px solid $black;
             margin-top: 0px;
@@ -127,6 +158,16 @@
             }   
         }
     }
+
+    .content-section{
+        padding: 100px 0px;
+        font-size: 75px;
+    
+        .section-title{
+            margin-bottom: 100px;
+        }
+    
+    }
 }
 
 @media (min-width: 1920px) {
@@ -135,4 +176,12 @@
             font-size: 270px;
         }
     }
+
+    .content-section{
+    
+        .section-title{
+            font-size: 265px;
+        }
+    }
+    
 }

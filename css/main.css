@@ -506,6 +506,7 @@ header .navbar .contact-link::after {
 
 .resume {
   padding-top: 50px;
+  padding-bottom: 37.5px;
 }
 
 .resume .main-resume {
@@ -554,6 +555,23 @@ header .navbar .contact-link::after {
   text-transform: uppercase;
 }
 
+.content-section {
+  padding: 37.5px 0px;
+  font-size: 25px;
+}
+
+.content-section .section-title {
+  font-size: 14vw;
+  line-height: 1.2;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.content-section#about p {
+  font-weight: 700;
+  line-height: 1.33;
+}
+
 @media (min-width: 768px) {
   .wrap-content {
     padding-top: 0px;
@@ -566,15 +584,26 @@ header .navbar .contact-link::after {
   }
   .resume {
     padding-top: 100px;
+    padding-bottom: 62.5px;
   }
   .resume .main-resume {
     font-size: 3.9vw;
+  }
+  .content-section {
+    padding: 62.5px 0px;
+    font-size: 40px;
+  }
+  .content-section .section-title {
+    margin-bottom: 75px;
   }
 }
 
 @media (min-width: 992px) {
   .presentation {
     padding-top: 25px;
+  }
+  .resume {
+    padding-bottom: 100px;
   }
   .resume .digital-description {
     border: 1px solid #000000;
@@ -597,11 +626,21 @@ header .navbar .contact-link::after {
   .resume .digital-description h3, .resume .digital-description p {
     font-size: 40px;
   }
+  .content-section {
+    padding: 100px 0px;
+    font-size: 75px;
+  }
+  .content-section .section-title {
+    margin-bottom: 100px;
+  }
 }
 
 @media (min-width: 1920px) {
   .presentation .tagline {
     font-size: 270px;
+  }
+  .content-section .section-title {
+    font-size: 265px;
   }
 }
 /*# sourceMappingURL=main.css.map */
