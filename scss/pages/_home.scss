@@ -118,9 +118,33 @@
             display: inline-block;
         }
 
+        .info{
+            z-index: 3;
+            font-size: 26px;
+            line-height: 1.5;
+            font-weight: 700;
+            text-align: right;
+            pointer-events: none;
+            position: fixed;
+            right: 50px;
+            left: auto;
+            top: 50%;
+            bottom: auto;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all ease 0.7s;
+
+            span{
+                display: block;
+            }
+        }
+
         &+.work-item{
             margin-top: 50px;
         }
+
+        
+        
     }
 }
 
@@ -237,25 +261,30 @@
                         display: inline;
                         -webkit-text-stroke: 0px;
                     }
+
+                    &+.info{
+                        opacity: 1;
+                    }
                 }
             }
 
             .work-title {
                 margin-bottom: 0px;
                 position: relative;
-                z-index: 2;
+                z-index: 2000;
                 mix-blend-mode: exclusion;
             }
 
             .img-container {
                 position: fixed;
-                width: 65.83vw;
+                width: 65vw;
                 z-index: 1;
                 top: 50%;
                 bottom: auto;
                 left: 50%;
                 right: auto;
                 transform: translateX(-50%) translateY(-50%);
+                pointer-events: none;
             }
 
             .absolute{
