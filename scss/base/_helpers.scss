@@ -72,7 +72,7 @@ video {
 
 .transparent-link{
   pointer-events: none;
-  
+  font-weight: 700;
 }
 
 @media (min-width: 992px) {
@@ -89,6 +89,7 @@ video {
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     pointer-events: initial;
+    
 
     @include on-event {
       background-position: left top;
