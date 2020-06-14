@@ -272,8 +272,8 @@
                         -webkit-background-clip: text;
                     }
 
-                    @include on-event {
-
+                    &:hover {
+                        -webkit-text-stroke:0.5px $white;
                         i {
                             display: inline;
                             -webkit-text-stroke: 0px;
@@ -312,7 +312,7 @@
                 opacity: 0;
 
                 img {
-                    max-width: 1264px;
+                    max-width: 100%px;
                     display: block;
                     transform: translateX(-50px);
                     transition: all ease 0.7s;
@@ -330,6 +330,12 @@
             }
         }
 
+    }
+}
+
+@media (min-width: 1400px){
+    #work .work-item .img-container img{
+        max-width: 1264px;
     }
 }
 

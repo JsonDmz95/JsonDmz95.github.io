@@ -91,7 +91,7 @@ video {
     pointer-events: initial;
     
 
-    @include on-event {
+    &:hover {
       background-position: left top;
     }
 
