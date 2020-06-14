@@ -229,6 +229,7 @@ header .navbar .lights-btn {
   font-size: 35px;
   line-height: 1;
   transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
 }
 
 header .navbar .lights-btn::after {
@@ -548,6 +549,7 @@ header .navbar .contact-link::after {
 .wrap-content {
   background: #F7F3F0;
   padding-top: 130px;
+  transition: background ease 0.5s;
 }
 
 .presentation .tagline {
@@ -824,6 +826,9 @@ header .navbar .contact-link::after {
   #work .work-item .img-container img {
     max-width: 1264px;
   }
+  #contact .mail-container {
+    font-size: 100px;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -832,6 +837,36 @@ header .navbar .contact-link::after {
   }
   .content-section .section-title {
     font-size: 265px;
+  }
+}
+
+.dark .wrap-content {
+  background: #1B1D1E;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6, .dark p, .dark a {
+  color: #F7F3F0;
+}
+
+.dark .resume .digital-description {
+  background: #1B1D1E;
+}
+
+.dark a::after {
+  background: #F7F3F0;
+}
+
+@media (min-width: 992px) {
+  .dark .transparent-link {
+    -webkit-text-stroke: 1px #F7F3F0;
+    background-image: linear-gradient(to right, #F7F3F0 0%, #F7F3F0 50%, transparent 50%, transparent 100%);
+  }
+  .dark .resume .digital-description {
+    border-color: #F7F3F0;
+    box-shadow: -20px 20px 0px #F7F3F0;
+  }
+  .dark #work .work-item .img-container {
+    background: #1B1D1E;
   }
 }
 /*# sourceMappingURL=main.css.map */

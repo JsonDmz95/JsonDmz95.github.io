@@ -1,6 +1,7 @@
 .wrap-content {
     background: $secondary-color;
     padding-top: 130px;
+    transition: background ease 0.5s;
 }
 
 .presentation {
@@ -342,6 +343,10 @@
 @media (min-width: 1400px){
     #work .work-item .img-container img{
         max-width: 1264px;
+    }
+
+    #contact .mail-container{
+        font-size: 100px;
     }
 }
 

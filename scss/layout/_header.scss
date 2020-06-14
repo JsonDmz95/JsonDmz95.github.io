@@ -43,6 +43,7 @@ header {
 			font-size: 35px;
 			line-height: 1;
 			transform: translateX(-50%) translateY(-50%);
+			cursor: pointer;
 
 			&::after{
 				display: none;

@@ -1,0 +1,36 @@
+.dark{
+    .wrap-content{
+        background: $dark-color;
+    }
+
+    h1, h2, h3, h4, h5, h6, p, a{
+        color: $secondary-color;
+    }
+
+    .resume .digital-description{
+        background: $dark-color;
+    }
+
+    a::after{
+        background: $secondary-color;
+    }
+}
+
+@media (min-width: 992px){
+    .dark{
+        .transparent-link{
+            -webkit-text-stroke: 1px $secondary-color;
+        background-image: linear-gradient(to right, $secondary-color 0%, $secondary-color 50%, transparent 50%, transparent 100%);
+        }
+    
+        .resume .digital-description{
+            border-color: $secondary-color;
+            box-shadow: -20px 20px 0px $secondary-color;
+        }
+
+        #work .work-item .img-container{
+            background: $dark-color;
+        }
+    }
+    
+}

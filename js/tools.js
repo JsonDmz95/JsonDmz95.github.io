@@ -18,3 +18,22 @@ $('.nav-link').click(function(e) {
     e.preventDefault();
 });
 // END OF Local Scroll 
+
+// Dark Mode 
+$('.lights-btn').click(function(e){
+    // $("body").addClass("dark")
+    if ($("body").hasClass("dark") == true){
+        $("body").removeClass("dark")
+        $(this).attr("title", "Turn Off the lights");
+
+        createCookie("",-1);
+        createCookie("false",30);
+    } else{
+        $("body").addClass("dark")
+        $(this).attr("title", "Turn On the lights");
+
+        createCookie("",-1);
+        createCookie("true",30);
+    }
+});
+// END OF Dark Mode 
