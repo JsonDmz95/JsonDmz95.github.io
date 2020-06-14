@@ -1,4 +1,5 @@
 .dark{
+    color: $secondary-color;
     .wrap-content{
         background: $dark-color;
     }
@@ -13,6 +14,10 @@
 
     a::after{
         background: $secondary-color;
+    }
+
+    .navbar-collapse{
+        background: $dark-color;
     }
 }
 
