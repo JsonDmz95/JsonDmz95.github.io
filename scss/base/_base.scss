@@ -11,6 +11,46 @@ body {
   color: $text-color;
   // cursor: url("../img/cursor.png"), auto;
   cursor: crosshair;
+
+  overflow: hidden;
+}
+
+.preload {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: $dark-color;
+  z-index: 1051;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all ease 0.7s;
+
+  .logo-container{
+    animation: opacity ease-in 2s infinite normal;
+  }
+
+  svg {
+    animation: logo-rotate ease 30s infinite normal;
+    transition: all ease 0.5s;
+    g{
+      width: 50vh;
+    }
+
+    path{
+      fill: white;
+    }
+  }
+
+  .hide{
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 h1,
@@ -39,8 +79,9 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
+
   // cursor: url("../img/pointer.png"), auto;
-  &::after{
+  &::after {
     content: '';
     display: block;
     position: absolute;
@@ -57,7 +98,8 @@ a {
   @include on-event {
     color: $black;
     text-decoration: none;
-    &::after{
+
+    &::after {
       width: 100%;
       left: 0px;
       right: auto;
@@ -65,8 +107,8 @@ a {
   }
 }
 
-@media (min-width: 1400px){
-  .container-fluid{
+@media (min-width: 1400px) {
+  .container-fluid {
     padding-left: 50px;
     padding-right: 50px;
   }
