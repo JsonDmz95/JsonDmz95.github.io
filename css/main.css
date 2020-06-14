@@ -438,6 +438,66 @@ header .navbar .contact-link::after {
   }
 }
 
+#footer {
+  line-height: 1;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#footer .flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .list-title {
+  font-size: 25px;
+  margin: 0px;
+  line-height: 1.5;
+}
+
+#footer .social-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1;
+}
+
+#footer .social-list a {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  #footer {
+    padding-bottom: 50px;
+  }
+  #footer .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 70px;
+  }
+  #footer .list-title {
+    font-size: 40px;
+    line-height: 1;
+  }
+  #footer .social-list a {
+    line-height: 1;
+  }
+  #footer .copyright p {
+    line-height: 1;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  #footer .flex-container {
+    padding-top: 10px;
+  }
+  #footer .list-title {
+    font-size: 75px;
+  }
+}
+
 @keyframes logo-rotate {
   0% {
     transform: rotate(0deg);
@@ -619,6 +679,10 @@ header .navbar .contact-link::after {
 
 #work .work-item + .work-item {
   margin-top: 50px;
+}
+
+#contact .mail-container {
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
