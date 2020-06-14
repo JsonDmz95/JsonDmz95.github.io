@@ -6,6 +6,6 @@ $(window).on('load', function () {
 
   setTimeout(function () {
     $(".preload").css("display", "none");
-  }, 1000);
+  }, 750);
   checkCookie();
 });
