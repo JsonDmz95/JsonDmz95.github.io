@@ -16,6 +16,7 @@ $('.nav-link').click(function(e) {
         scrollTop: position.top
     }, 1400);
     e.preventDefault();
+    $(".navbar-collapse").collapse('hide');
 });
 // END OF Local Scroll 
 
