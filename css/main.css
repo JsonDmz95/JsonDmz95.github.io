@@ -595,6 +595,28 @@ header .navbar .contact-link::after {
   display: none !important;
 }
 
+#work .work-item .work-title .info {
+  z-index: 3;
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: right;
+  pointer-events: none;
+  position: fixed;
+  right: 50px;
+  left: auto;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  transition: all ease 0.7s;
+  display: none;
+}
+
+#work .work-item .work-title .info span {
+  display: block;
+  color: #ffffff;
+}
+
 #work .work-item + .work-item {
   margin-top: 50px;
 }
@@ -691,6 +713,13 @@ header .navbar .contact-link::after {
     display: inline;
     -webkit-text-stroke: 0px;
     -webkit-background-clip: text;
+  }
+  #work .work-item .work-title .transparent-link:hover + .info, #work .work-item .work-title .transparent-link:active + .info, #work .work-item .work-title .transparent-link:focus + .info {
+    opacity: 1;
+  }
+  #work .work-item .work-title .info {
+    display: block;
+    opacity: 0;
   }
   #work .work-item .img-container {
     z-index: 1;
