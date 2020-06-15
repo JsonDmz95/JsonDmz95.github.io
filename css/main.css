@@ -862,7 +862,7 @@ header .navbar .contact-link::after {
     opacity: 0;
   }
   #work .work-item .img-container img {
-    max-width: 100%px;
+    max-width: 100%;
     display: block;
     transform: translateX(-50px);
     transition: all ease 0.7s;
