@@ -116,11 +116,11 @@ a {
 
 /// Text selection colors
 ::-moz-selection {
-  background: $black;
-  color: $white;
+  background: transparent;
+  color: #00f4bf;
 }
 
 ::selection {
-  background: $black;
-  color: $white;
+  background: transparent;
+  color: #00f4bf;
 }
