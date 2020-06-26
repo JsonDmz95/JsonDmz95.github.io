@@ -75,6 +75,10 @@ video {
   font-weight: 700;
 }
 
+.d-xxl-inline{
+  display: inline;
+}
+
 @media (min-width: 992px) {
 
   .transparent-link {
@@ -95,6 +99,16 @@ video {
       background-position: left top;
     }
 
+  }
+
+  .d-xxl-inline{
+    display: none;
+  }
+}
+
+@media (min-width: 1600px){
+  .d-xxl-inline{
+    display: inline;
   }
 }
 
