@@ -1,6 +1,6 @@
 $(window).on('load', function () {
 
-  $(this).impulse();
+  // $(this).impulse();
   $("body").css("overflow-y", "scroll");
   $(".preload").addClass("hide");
 
